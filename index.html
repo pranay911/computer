@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <ul>
+        <div class="topnav">
+            <div class="topnav-centered">
+
+            
+       <li class="active"><a href="#">Home</a>
+        </li>
+
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+</div>
+
+
+    <div class="text-muted">
+        <h1> THE COMPUTER</h1>
+        <h4>
+
+
+
+    
+        <br>A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations
+        <br>automatically via computer programming. Modern computers have the ability to follow generalized sets of opera
+        <br>tions, called programs. These programs enable computers to perform an extremely wide range of tasks. A "compl
+        <br>tions, called programs. These programs enable computers to perform an extremely wide range of tasks. A "compl
+        <br>ete" computer including the hardware, the operating system (main software), and peripheral equipment required
+        <br>and used for "full" operation can be referred to as a computer system. This term may as well be used for a g
+        <br>roup of computers that are connected and work together, in particular a computer network or computer cluster.
+
+       <br>Computers are used as control systems for a wide variety of industrial and consumer devices. This includes simp
+       <br>le special purpose devices like microwave ovens and remote controls, factory devices such as industrial robots 
+       <br> and computer-aided design, and also general purpose devices like personal computers and mobile devices such as 
+       <br>smartphones. The Internet is run on computers and it connects hundreds of millions of other computers and their
+       <br>users.
+       
+       
+       </h4>
+
+    </div>
+
+        <div id="slider">
+            <div id="box">
+             <img src="top.jpg">
+            </div>
+            <button class="prev fa fa-chevron-left" onclick="prevImage()"></button>
+            <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
+
+            <a class="gotop" href="#"><i class="fas fa-angle-double-up"></i></a>
+
+        </div>
+
+
+        <script type="text/javascript">
+        var slider_content= document.getElementById('box');
+        var image=['top','comp'];
+        var i=image.length;
+
+        function nextImage(){
+            if(i<image.length){
+                i=i+1;
+            }else{
+                i=1;
+            }
+            slider_content.innerHTML="<img src="+image[i-1]+".jpg>";
+        }
+        function prevImage(){
+            if(i<image.length+1 && i>1){
+                i=i-1;
+            }else{
+                i=image.length;
+            }
+            slider_content.innerHTML="<img src="+image[i-1]+".jpg>";
+        }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
